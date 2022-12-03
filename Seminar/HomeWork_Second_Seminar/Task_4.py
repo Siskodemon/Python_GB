@@ -16,7 +16,7 @@ while i !="":
     i = input('Введите индексили просто нажмите Enter: ')
     if i !="":
         list2.append(int(i))
-sum=0
+sum=1
 for i in range(0,len(list2)-1):
     sum=sum*list[list2[i]]
 print(f'Сумма индексов - {sum}')
