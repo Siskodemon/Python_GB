@@ -12,12 +12,14 @@ def rec(list:list, i:int):
 
 def input_array(list:list,str:str,kol:int):
     if str == 'y':
-        for i in range(0,kol-1):
-            list.append(int(input(f'Введите {i}-ый элемент списка: ')))
+        list = [int(input(f'Введите {i}-ый элемент списка: ')) for i in range(0, kol)]
+        # for i in range(0,kol-1):
+        #     list.append(int(input(f'Введите {i}-ый элемент списка: ')))
     else:
         from random import randint
-        for i in range(0, kol):
-            list.append(randint(0,100))
+        list = [randint(0,10) for i in range(0,kol)]
+        # for i in range(0, kol):
+        #     list.append(randint(0,100))
     return list
 
 count = int(input('Введите кол-во элементов в списке: '))

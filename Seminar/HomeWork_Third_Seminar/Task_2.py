@@ -11,8 +11,10 @@ def input_array(list:list,str:str,kol:int):
             list.append(int(input(f'Введите {i}-ый элемент списка: ')))
     else:
         from random import randint
-        for i in range(0, kol):
-            list.append(randint(1,9))
+        list = [randint(1, 9) for i in range(0, kol)] # list comprehension
+        # from random import randint
+        # for i in range(0, kol):
+        #     list.append(randint(1,9))
     return list
 
 count = int(input('Введите кол-во элементов в списке: '))

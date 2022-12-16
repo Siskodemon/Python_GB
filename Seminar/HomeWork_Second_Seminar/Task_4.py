@@ -7,16 +7,18 @@
 # Вывод: 0
 
 N = int(input('Введите число: '))
-list=[]
-for i in range(-N,N+1):
-    list.append(i)
-print(f'Полученный список - {list}')
+# list=[]
+# for i in range(-N,N+1):
+#     list.append(i)
+list1 = [i for i in range(-N,N+1)]
+print(f'Полученный список - {list1}')
 list2=[]
-while i !="":
-    i = input('Введите индексили просто нажмите Enter: ')
-    if i !="":
-        list2.append(int(i))
+j='1'
+while j !="":
+    j = input('Введите индекс или просто нажмите Enter: ')
+    if j !="":
+        list2.append(int(j))
 sum=1
-for i in range(0,len(list2)-1):
-    sum=sum*list[list2[i]]
+for i in range(0,len(list2)):
+    sum *= list1[list2[i]]
 print(f'Сумма индексов - {sum}')
