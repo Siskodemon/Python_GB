@@ -1,0 +1,8 @@
+pip freeze > requirements.txt - создать
+
+pip install -r requirements.txt - установить
+
+pip install -U -r requirements.txt - установить и обновить все, что можно
+
+
+
